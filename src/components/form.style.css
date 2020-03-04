@@ -2,7 +2,8 @@
     margin-top: 3rem;
 }
 
-form input[name="city"], form input[name="country"] {
+form input[name="city"],
+form input[name="country"] {
     background-color: transparent;
     color: white;
     border: 0;
@@ -15,6 +16,12 @@ form input:focus {
     box-shadow: none !important;
 }
 
-form input .container::-webkit-input-placeholder {
+form input::-webkit-input-placeholder {
     color: white !important;
+}
+form ::-webkit-input-placeholder {
+    color: white !important;
+}
+form input:focus::-webkit-input-placeholder {
+    color: transparent !important;
 }
